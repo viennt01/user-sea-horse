@@ -1,0 +1,24 @@
+$xs: '0';
+$sm: '576px';
+$md: '768px';
+$lg: '992px';
+$xl: '1200px';
+$xxl: '1600px';
+
+@mixin mobile-device {
+  @media screen and (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin desktop-device {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "asl-user",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8080",
+    "build": "next build",
+    "start": "next start",
+    "prepare": "husky install",
+    "precommit": "lint-staged",
+    "format": "prettier --write",
+    "lint": "eslint --fix "
+  },
+  "dependencies": {
+    "@ant-design/icons": "5.0.1",
+    "@ant-design/plots": "1.2.5",
+    "@module-federation/nextjs-mf": "6.3.0",
+    "@next/font": "13.1.2",
+    "@tanstack/react-query": "^4.29.19",
+    "@tanstack/react-query-devtools": "^4.29.19",
+    "@types/antd": "^1.0.0",
+    "@types/node": "^20.9.2",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-highlight-words": "^0.16.7",
+    "antd": "^5.11.2",
+    "axios": "^1.6.1",
+    "dayjs": "1.11.7",
+    "html2pdf.js": "0.9.0",
+    "i18next": "22.4.14",
+    "next": "13",
+    "next-i18next": "13.2.2",
+    "pdfjs-dist": "2.2.228",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-highlight-words": "^0.20.0",
+    "react-i18next": "12.2.0",
+    "sass": "1.58.0",
+    "sharp": "0.31.3",
+    "styled-components": "^6.1.1",
+    "webpack": "5.78.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "6.2.1",
+    "@types/pdfjs-dist": "2.7.0",
+    "@typescript-eslint/eslint-plugin": "5.48.1",
+    "@typescript-eslint/parser": "5.48.1",
+    "eslint": "8.32.0",
+    "eslint-config-next": "^14.0.3",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "8.0.3",
+    "lint-staged": "13.1.0",
+    "prettier": "2.8.3",
+    "typescript": "^5.2.2"
+  },
+  "lint-staged": {
+    "*.{js,tsx,jsx}": [
+      "yarn format",
+      "yarn lint"
+    ]
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

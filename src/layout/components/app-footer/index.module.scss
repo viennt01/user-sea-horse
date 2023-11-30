@@ -1,0 +1,47 @@
+@import '@/styles/_base.scss';
+
+.appFooterWrapper {
+  padding: 0;
+  width: 100%;
+  .wrapper {
+    max-width: 1200px;
+
+    width: 100%;
+    .appFooter {
+      padding: 24px;
+      max-width: 1200px;
+      width: 100%;
+
+      .headerItem {
+        color: $GREY_COLOR_HOVER;
+        font-size: 26px;
+        font-weight: 700;
+        font-family: Inika;
+        margin-bottom: 8px;
+      }
+      .item {
+        color: $GREY_COLOR_HOVER;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: Inika;
+        margin: 0 0 8px 8px;
+        cursor: pointer;
+      }
+    }
+  }
+  .copyRight {
+    background-color: $GREY_COLOR_HOVER;
+    text-align: center;
+    line-height: 26px;
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: $WHITE;
+  }
+}
+
+@include desktop-device {
+  .appFooterWrapper {
+  }
+}
